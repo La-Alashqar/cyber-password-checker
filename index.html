@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberPass | محلل قوة كلمة المرور</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <div class="header">
+            <h1>CyberPass Analyzer</h1>
+            <p>تحقق من حصانة كلمة مرورك ضد هجمات الـ Brute Force</p>
+        </div>
+
+        <div class="input-area">
+            <input type="password" id="passwordInput" placeholder="أدخل كلمة المرور هنا...">
+            <button id="toggleView">إظهار</button>
+        </div>
+
+        <div class="strength-container">
+            <div id="strengthBar" class="bar"></div>
+        </div>
+
+        <div id="feedback" class="feedback-text">
+            ابدأ الكتابة لتقييم كلمة المرور...
+        </div>
+
+        <div class="requirements">
+            <ul>
+                <li id="length">8 أحرف على الأقل</li>
+                <li id="uppercase">حروف كبيرة (A-Z)</li>
+                <li id="number">أرقام (0-9)</li>
+                <li id="special">رموز خاصة (!@#)</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
